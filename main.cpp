@@ -1,7 +1,7 @@
 #include <iostream>
-/* ATIVIDADE ESTTUTURA DE DADOS GRUPO UNIS-MG
+/*
 AUTOR: DANILO BELATO
-CONTEM 3 FUN«OES :
+CONTEM 3 FUN√áOES :
 UMA PARA CRIA NOVOS No.
 OUTRA PARA INSERIR NOVOS VALORES NA ARVORE BINARIA
 E UMA PARA BUSCAR UM NUMERO QUE ESTEJA DENTRO DA ARVORE
@@ -15,7 +15,7 @@ typedef struct arvore {
     struct arvore *pai;
 } Arvore;
 
-// DECLARA«AO DAS MINHAS FUN«OES
+// DECLARA√áAO DAS MINHAS FUN√áOES
 Arvore *novaArv (int valor);
 Arvore *insereArv (Arvore * no,int valor);
 Arvore *buscaArv (Arvore * no,int buscar);
@@ -56,7 +56,7 @@ Arvore *insereArv (Arvore * no,int valor){
     if(no == nullptr){
         return nullptr;
 }
-    if (no->chave == buscar){                //BUSCO UM NUMERO NA MINHA ARVORE CASO N√O EXISTA ELE RETONA NULLPTR
+    if (no->chave == buscar){                //BUSCO UM NUMERO NA MINHA ARVORE CASO N√ÉO EXISTA ELE RETONA NULLPTR
         return no;
     }
         else{
@@ -102,7 +102,7 @@ int main()
 {
     Arvore * raiz = novaArv(30); // DECLARO MINHA RAIZ
     insereArv( raiz,15);
-    insereArv( raiz, 25);   // DECLARA«AO DOS NUMERO QUE IR√O ENTRAR NA ARVORE
+    insereArv( raiz, 25);   // DECLARA√áAO DOS NUMERO QUE IR√ÉO ENTRAR NA ARVORE
     insereArv( raiz, 35);
     insereArv( raiz, 5);
 
